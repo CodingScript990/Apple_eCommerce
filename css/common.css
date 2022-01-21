@@ -1,0 +1,45 @@
+/* Fontawesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Css url */
+@import url('section1.css');
+
+/* Common Style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Color style */
+
+:root {
+  --primary-color: #487fbe;
+  --white-color: #ffffff;
+  --transparent1-color: #d3d2d2f5;
+  --transparent2-color: #f0f0f0e0;
+  --black-color: #000000;
+  --gray-color: #4d4d4d;
+  --darkGray-color: #383737e3;
+}
+
+/* Repetition */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End of Common Style */
