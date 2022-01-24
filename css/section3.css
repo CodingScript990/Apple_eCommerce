@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   padding: 15rem 0;
+  clip-path: polygon(68% 0, 100% 0, 100% 97%, 38% 100%, 0 100%, 0 3%);
 }
 
 /* Section 3 Heading */
@@ -74,6 +75,11 @@
   flex-direction: column;
 }
 
+.change .loading {
+  opacity: 0;
+  transition: 2s 5s;
+}
+
 .loading i {
   font-size: 10rem;
   color: var(--white-color);
@@ -93,9 +99,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 0;
   height: 100%;
   background-color: var(--white-color);
+}
+
+.change .progress-bar::after {
+  width: 100%;
+  transition: width 2s 3s;
 }
 
 /* End of Section 3 Loading */
@@ -107,6 +118,11 @@
   position: absolute;
   text-align: center;
   opacity: 0;
+}
+
+.change .macbook-info {
+  opacity: 1;
+  transition: opacity 3s 7s;
 }
 
 .macbook-info-heading {
@@ -142,9 +158,9 @@
 }
 
 .macbook-btn:hover {
-  background: linear-gradient(to bottom left, #98c8f8, #bee0f1, #b9cdf7, #99c3ee, #98c8f8);
+  background: linear-gradient(to right, #d4e8f8, #d8eaf3, #c0d5ff, #9bc7f3, #85bbf1);
   -webkit-background-clip: background;
-  -webkit-text-fill-color: #364a72;
+  -webkit-text-fill-color: #4865a0;
 }
 
 /* End of Section 3 Info */

@@ -1,0 +1,125 @@
+/* Scetion 4 */
+
+.section-4 {
+  height: 140vh;
+  padding: 20vh 0;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Section 4 Watches */
+
+.watches { 
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.watches > div {
+  position: absolute;
+}
+
+/* Watch Bands */
+
+.watch-bands {
+  transition: margin-right 1s;
+}
+
+.watch-band-img {
+  width: 35rem;
+  height: 35rem;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+}
+
+/* End of Watch Bands */
+
+/* Watch Cases */
+
+.watch-cases {
+  flex-direction: column;
+  transition: margin-top 1s;
+}
+
+.watch-case-img {
+  width: 35rem;
+  height: 35rem;
+  object-fit: contain;
+}
+
+/* End of Watch Cases */
+
+/* End of Section 4 Watches */
+
+/* Watch Controls */
+
+.watch-control {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(221, 221, 221, .4);
+  border-radius: 5rem;
+}
+
+.hidenControl {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.watch-control i {
+  font-size: 3rem;
+  color: var(--black-color);
+}
+
+.watch-top-control {
+  top: 22vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.watch-right-control {
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+}
+
+.watch-bottom-control {
+  left: 50%;
+  bottom: 20vh;
+  transform: translateX(-50%);
+}
+
+.watch-left-control {
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+}
+
+/* End of Watch Controls */
+
+/* Watch Button */
+
+.watch-btn {
+  position: absolute;
+  bottom: 30vh;
+  right: 35%;
+  width: 13rem;
+  height: 5rem;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border: .125rem solid #ffffff;
+  clip-path: polygon(48% 6%, 100% 0, 94% 35%, 93% 60%, 98% 100%, 49% 94%, 0 100%, 6% 65%, 6% 36%, 0 0);
+  font-size: 1.6rem;
+  font-weight: 200;
+  cursor: pointer;
+  transition: clip-path .5s;
+}
+
+.watch-btn:hover {
+  clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0, 100% 0, 100% 100%,0 100%, 0 100%, 0 0,100% 0);
+}
+
+/* End of Watch Button */
+
+/* End of Scetion 4 */

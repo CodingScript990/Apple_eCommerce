@@ -1,3 +1,13 @@
+// Common JS
+
+document.querySelectorAll(".watch-control, .controls a").forEach((control) => {
+  control.addEventListener("click", (e) => {
+    e.preventDefault();
+  });
+});
+
+// End of Common JS
+
 // Cube
 
 let x = 0; // x
@@ -65,7 +75,8 @@ const slideshowDivs = () => {
   for (let i = 1; i <= 5; i++) {
     const div = document.createElement("div");
 
-    div.style.backgroundImage = `url(image/slideshow/slideshow-bg-${i}.jpg)`;
+    div.style.backgroundImage = `url(image/slides/slides-bg-${i}.jpg)`;
+    div.style.backgroundSize = `cover`;
 
     i === 1 && div.classList.add("change");
 
@@ -82,19 +93,19 @@ let a = 1;
 
 const slideshow = () => {
   setInterval(() => {
-    a++;
-
     const div = document.querySelector(".slideshow .change");
 
     div.classList.remove("change");
 
-    if (a < divs.length) {
+    a++;
+
+    if (a < divs.length + 1) {
       div.nextElementSibling.classList.add("change");
     } else {
       divs[0].classList.add("change");
       a = 1;
     }
-  }, 5000);
+  }, 3000);
 };
 
 slideshow();
@@ -115,3 +126,73 @@ window.addEventListener("scroll", () => {
 });
 
 // End of Section 3
+
+// Section 4
+
+const watchBands = document.querySelector(".watch-bands");
+const watchCases = document.querySelector(".watch-cases");
+
+const watchTopControl = document.querySelector(".watch-top-control");
+const watchRightControl = document.querySelector(".watch-right-control");
+const watchBottomControl = document.querySelector(".watch-bottom-control");
+const watchLeftControl = document.querySelector(".watch-left-control");
+
+let axisX = 0; // x
+let axisY = 0; // y
+
+// Hiden Control
+const hidenControl = () => {
+  // control btn top
+  if (axisY === -350) {
+    watchTopControl.classList.add("hidenControl");
+  } else {
+    watchTopControl.classList.remove("hidenControl");
+  }
+
+  // control btn bottom
+  if (axisY === 280) {
+    watchBottomControl.classList.add("hidenControl");
+  } else {
+    watchBottomControl.classList.remove("hidenControl");
+  }
+
+  // control btn right
+  if (axisX === 280) {
+    watchRightControl.classList.add("hidenControl");
+  } else {
+    watchRightControl.classList.remove("hidenControl");
+  }
+
+  // control btn left
+  if (axisX === -350) {
+    watchLeftControl.classList.add("hidenControl");
+  } else {
+    watchLeftControl.classList.remove("hidenControl");
+  }
+};
+
+// top
+watchTopControl.addEventListener("click", () => {
+  watchCases.style.marginTop = `${(axisY -= 70)}rem`;
+  hidenControl();
+});
+
+// bottom
+watchBottomControl.addEventListener("click", () => {
+  watchCases.style.marginTop = `${(axisY += 70)}rem`;
+  hidenControl();
+});
+
+// right
+watchRightControl.addEventListener("click", () => {
+  watchBands.style.marginRight = `${(axisX += 70)}rem`;
+  hidenControl();
+});
+
+// left
+watchLeftControl.addEventListener("click", () => {
+  watchBands.style.marginRight = `${(axisX -= 70)}rem`;
+  hidenControl();
+});
+
+// End of Section 4
