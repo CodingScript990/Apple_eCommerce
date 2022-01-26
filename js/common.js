@@ -196,3 +196,7 @@ watchLeftControl.addEventListener("click", () => {
 });
 
 // End of Section 4
+
+// Section 5
+
+// End of Section 5
