@@ -1,10 +1,12 @@
 // Common JS
 
-document.querySelectorAll(".watch-control, .controls a").forEach((control) => {
-  control.addEventListener("click", (e) => {
-    e.preventDefault();
+document
+  .querySelectorAll(".watch-control, .controls a, .iphone-btn")
+  .forEach((control) => {
+    control.addEventListener("click", (e) => {
+      e.preventDefault();
+    });
   });
-});
 
 // End of Common JS
 
@@ -198,5 +200,16 @@ watchLeftControl.addEventListener("click", () => {
 // End of Section 4
 
 // Section 5
+
+const section5Content = document.querySelector(".section-5");
+
+window.addEventListener("scroll", () => {
+  if (
+    window.pageYOffset + window.innerHeight >=
+    section5Content.offsetTop + section5Content.offsetHeight / 2
+  ) {
+    section5Content.classList.add("change");
+  }
+});
 
 // End of Section 5

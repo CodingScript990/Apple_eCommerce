@@ -2,10 +2,23 @@
 
 .section-4 {
   height: 140vh;
-  padding: 20vh 0;
+  padding: 5vh 1vw;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
 }
+
+/* Section 4 Heading */
+
+.section-4-heading {
+  font-size: 11rem;
+  font-weight: 300;
+  transform: translateX(5%);
+  color: var(--white-color);
+  text-shadow: .3rem .3rem 1rem #5f5e5ecc;
+}
+
+/* End of Section 4 Heading */
 
 /* Section 4 Watches */
 
@@ -58,7 +71,7 @@
   position: absolute;
   width: 4rem;
   height: 4rem;
-  background-color: rgba(221, 221, 221, .4);
+  background-color: rgba(221, 221, 221, 0.747);
   border-radius: 5rem;
 }
 
