@@ -115,24 +115,77 @@
 
 .watch-btn {
   position: absolute;
-  bottom: 30vh;
-  right: 35%;
-  width: 13rem;
-  height: 5rem;
-  background-color: var(--black-color);
-  color: var(--white-color);
-  border: .125rem solid #ffffff;
-  clip-path: polygon(48% 6%, 100% 0, 94% 35%, 93% 60%, 98% 100%, 49% 94%, 0 100%, 6% 65%, 6% 36%, 0 0);
-  font-size: 1.6rem;
-  font-weight: 200;
+  width: 10%;
+  height: 5%;
+  top: 74.5%;
+  left: 75%;
+  transform: translate(-20%, -20%);
   cursor: pointer;
-  transition: clip-path .5s;
 }
 
-.watch-btn:hover {
-  clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0, 100% 0, 100% 100%,0 100%, 0 100%, 0 0,100% 0);
+.icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10rem;
+  height: 10rem;
+  background-image: url('/image/footer/watch-logo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .65;
+  transition: opacity 1.5s;
+}
+
+.icon:hover:before {
+  opacity: 0;
+}
+
+.icon::after {
+  content: "Apple Watch 구매하기";
+  position: absolute;
+  top: 50%;
+  left: -40%;
+  width: 250%;
+  font-size: 2.4rem;
+  color: #272727e1;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 1.75s;
+}
+
+.icon:hover:after {
+  opacity: 1;
+}
+
+.watch-btn span {
+  position: absolute;
+  font-size: 1.54rem;
+  font-weight: 600;
+  top: -27.5%;
+  left: 19.45%;
+  color: #4e4e4e;
+  transform: translate(-42%, -110%);
+  cursor: default;
+  animation: fontsBright 3.5s infinite;
 }
 
 /* End of Watch Button */
+
+/* watch animation */
+
+@keyframes fontsBright {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
 
 /* End of Scetion 4 */

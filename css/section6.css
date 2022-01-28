@@ -12,6 +12,12 @@
 
 .icon-link img {
   width: 10rem;
+  opacity: .5;
+  transition: opacity 1s;
+}
+
+.icon-link img:hover {
+  opacity: 1;
 }
 
 .copyright {

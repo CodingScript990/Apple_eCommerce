@@ -52,56 +52,68 @@ html {
 
 @media (max-width: 1500px) {
   html {
-    font-size: 45%;
+    font-size: 40%;
+  }
+
+  .section-2 {
+    height: 110vh;
+  }
+
+  .section-4 {
+    width: inherit;
+    height: 110vh;
+  }
+  
+  .icon::after {
+    top: 50%;
+    left: -31.57%;
+  }
+  
+  .watch-btn span {
+    top: -27.5%;
+    left: 15.45%;
+    color: #4e4e4e;
+    transform: translate(-42%, -110%);
   }
 
   .airpods {
-    width: 80%;
-    height: 60%;
+    width: 100%;
+    height: 80%;
     display: flex;
     position: relative;
     overflow: hidden;
   }
 
+  .section-5-heading {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+  }
+
   .airpods-info::before {
-    content: "모든 면에서 매혹적";
-    position: absolute;
     width: 60%;
     height: 100%;
     font-size: 3.5rem;
-    font-weight: bold;
     top: 50%;
-    left: 50%;
-    text-align: center;
-    text-shadow: 1rem 1rem 1rem solid #999999;
-    color: var(--white-color);
-    transform: translate(-37.5%, -20%);
-    opacity: 0;
+    left: 35.75%;
+    transform: translate(-17.5%, -17.25%);
   }
 
   .airpods-info::after {
-    content: "귀에 착용했는지를 감지하는 기능을 갖춰 귀와 다른 표면을 구분해내죠. 'Siri로 알림 읽어주기' 기능을 활용해 Siri가 AirPods을 통해 알림을 읽어주도록 설정할 수도 있습니다.";
-    position: absolute;
-    width: 70%;
+    width: 60%;
     height: 100%;
     top: 0;
-    left: 50%;
-    font-size: 2.25rem;
-    font-weight: 300;
-    font-family: 'Noto Sans', sans-serif;
-    text-align: left;
-    color: var(--white-color);
+    left: 45%;
+    font-size: 2.45rem;
     transform: translate(-30%, 55%);
     line-height: 2.5;
-    letter-spacing: .125rem;
-    opacity: 0;
   }
 
 }
 
 @media (max-width: 1100px) {
   html {
-    font-size: 40%;
+    font-size: 37%;
   }
 
   .navbar-link {
@@ -116,50 +128,81 @@ html {
     font-size: 3rem;
   }
 
+  .section-2 {
+    height: 110vh;
+  }
+
+  .section-4 {
+    width: inherit;
+    height: 110vh;
+  }
+  
   .watch-btn {
-    right: 25%;
+    width: 15.5%;
+    top: 70%;
+    right: 15%;
+    transform: translateY(50%);
+  }
+
+  .icon::after {
+    top: 50%;
+    left: -26.75%;
+  }
+  
+  .watch-btn span {
+    top: -27.5%;
+    left: 10.575%;
+    color: #4e4e4e;
+    transform: translate(-42%, -110%);
+  }
+  
+  .section-5-heading {
+    top: 11.5%;
+    left: 50%;
+    transform: translate(-50%, -70%);
   }
 
   .airpods {
     width: 100%;
-    height: 60%;
+    height: 80%;
     display: flex;
     position: relative;
     overflow: hidden;
   }
 
+  .airpods-img {
+    top: 15.5%;
+    left: -3%;
+  }
+
+  .airpods-img::after {
+    width: inherit;
+    transform: translateY(-9.5%);
+  }
+
   .airpods-info::before {
-    content: "모든 면에서 매혹적";
-    position: absolute;
     width: 60%;
     height: 100%;
-    font-size: 3.5rem;
-    font-weight: bold;
+    font-size: 3.75rem;
     top: 50%;
     left: 50%;
-    text-align: center;
-    text-shadow: 1rem 1rem 1rem solid #999999;
-    color: var(--white-color);
-    transform: translate(-37.5%, -20%);
-    opacity: 0;
+    transform: translate(-37.5%, -13.75%);
   }
 
   .airpods-info::after {
-    content: "귀에 착용했는지를 감지하는 기능을 갖춰 귀와 다른 표면을 구분해내죠. 'Siri로 알림 읽어주기' 기능을 활용해 Siri가 AirPods을 통해 알림을 읽어주도록 설정할 수도 있습니다.";
-    position: absolute;
     width: 70%;
     height: 100%;
     top: 0;
     left: 50%;
-    font-size: 2.25rem;
+    font-size: 2.75rem;
     font-weight: 300;
-    font-family: 'Noto Sans', sans-serif;
-    text-align: left;
     color: var(--white-color);
-    transform: translate(-30%, 55%);
-    line-height: 2.5;
-    letter-spacing: .125rem;
-    opacity: 0;
+    transform: translate(-35.5%, 55%);
+  }
+
+  .airpods-buttons {
+    top: 55.5%;
+    left: 41.5%;
   }
 
 }
@@ -177,52 +220,258 @@ html {
     font-size: 6rem;
   }
 
+  .section-3-content {
+    width: 90%;
+  }
+  
+  .section-4 {
+    width: 100%;
+    height: 110vh;
+  }
+
+  .icon::after {
+    top: 50%;
+    left: -31.57%;
+  }
+  
+  .watch-btn span {
+    top: -27.5%;
+    left: 16.125%;
+    color: #4e4e4e;
+    transform: translate(-42%, -110%);
+  }
+
+  .section-5 {
+    height: 110vh;
+  }
+
   .section-5-heading {
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -3%);
     font-size: 12rem;
   }
 
+  .section-5::after {
+    top: 0;
+    left: 0;
+    background: linear-gradient( #141414, #141414);
+    z-index: -1;
+  }
+
   .airpods {
-    width: 100%;
-    height: 60%;
+    width: 90%;
+    height: 100%;
     display: flex;
-    position: relative;
-    overflow: hidden;
+  }
+
+  .airpods-img {
+    top: 39.75%;
+    left: 3%;
+    transform: translate(50%, -25.4%);
+    z-index: 1;
+  }
+
+  .airpods-img::after {
+    transform: translateY(-5.125%);
+    z-index: 1;
   }
 
   .airpods-info::before {
-    content: "모든 면에서 매혹적";
-    position: absolute;
-    width: 60%;
-    height: 100%;
-    font-size: 3.5rem;
-    font-weight: bold;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    text-shadow: 1rem 1rem 1rem solid #999999;
-    color: var(--white-color);
-    transform: translate(-37.5%, -20%);
-    opacity: 0;
+    width: 70%;
+    font-size: 3.65rem;
+    top: 30.5%;
+    left: 23.5%;
+    transform: translate(-75.5%, 27.65%);
   }
 
   .airpods-info::after {
-    content: "귀에 착용했는지를 감지하는 기능을 갖춰 귀와 다른 표면을 구분해내죠. 'Siri로 알림 읽어주기' 기능을 활용해 Siri가 AirPods을 통해 알림을 읽어주도록 설정할 수도 있습니다.";
+    width: 83.2%;
+    top: 11%;
+    left: 20%;
+    font-size: 2.5rem;
+    transform: translate(-64.75%, 56.75%);
+    line-height: 2.125;
+  }
+
+  .airpods-buttons {
+    width: 74.55%;
+    top: 78.5%;
+    left: 30.75%;
+    transform: translate(-20%, 69.5%);
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .airpods-btn:first-child {
+    width: inherit;
+    background: linear-gradient(to right, #ececec, #ececec, #ececec,#ececec,#ececec, #ececec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.65rem;
+  }
+
+  .airpods-btn:last-child {
+    font-size: 2.65rem;
+  }
+
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 29%;
+  }
+
+  .logo {
+    top: 1.25rem;
+    left: 4.657rem;
+  }
+
+  .logo i {
+    font-size: 7rem;
+  }
+
+  .controls {
+    display: none;
+  }
+
+  .cube {
+    top: 3rem;
+  }
+
+  .cube-wrapper {
+    opacity: .7;
+  }
+
+  .section-1-banner {
     position: absolute;
-    width: 70%;
-    height: 100%;
-    top: 0;
-    left: 50%;
-    font-size: 2.25rem;
-    font-weight: 300;
-    font-family: 'Noto Sans', sans-serif;
-    text-align: left;
-    color: var(--white-color);
-    transform: translate(-30%, 55%);
-    line-height: 2.5;
-    letter-spacing: .125rem;
+  }
+
+  .section-1-banner h1 {
+    position: relative;
+    left: -5rem;
+  }
+
+  .section-1-banner h1::first-letter {
+    visibility: hidden;
     opacity: 0;
   }
 
+  .section-1-banner button:hover {
+    clip-path: polygon(48% 6%, 100% 0, 94% 35%, 93% 60%, 98% 100%, 49% 94%, 0 100%, 6% 65%, 6% 36%, 0 0);
+  }
+
+  .section-2 {
+    height: 110vh;
+  }
+
+  .iphones {
+    width: 70vw;
+    height: 70vh;
+  }
+
+  .section-3-content {
+    width: 90%;
+  }
+
+  .section-4 {
+    width: 100%;
+    height: 110vh;
+  }
+
+  .watch-btn {
+    top: 73.5%;
+    right: 12rem;
+    transform: translateY(50%);
+  }
+
+  .icon::after {
+    top: 50%;
+    left: -26.5%;
+  }
+  
+  .watch-btn span {
+    width: 94%;
+    top: -25.5%;
+    left: 15.45%;
+    color: #4e4e4e;
+    transform: translate(-42%, -110%);
+  }
+
+  .section-5::after {
+    top: 0;
+    left: 0;
+    background: linear-gradient( #141414, #141414);
+    z-index: -1;
+  }
+
+  .section-5-heading {
+    top: 9.15%;
+    left: 50%;
+    transform: translate(-57.75%, -5%);
+  }
+
+  .airpods {
+    width: 90%;
+    height: 100%;
+    display: flex;
+  }
+
+  .airpods-img {
+    top: 40%;
+    left: 3%;
+    transform: translate(50%, -23.4%);
+    z-index: 1;
+  }
+
+  .airpods-img::after {
+    transform: translateY(-4%);
+    z-index: 1;
+  }
+
+  .airpods-info::before {
+    width: 70%;
+    font-size: 4.25rem;
+    top: 34.75%;
+    left: 23.5%;
+    transform: translate(-75.5%, 19.5%);
+  }
+
+  .airpods-info::after {
+    width: 83.2%;
+    top: 15%;
+    left: 20%;
+    font-size: 2.75rem;
+    transform: translate(-64.75%, 50%);
+    line-height: 2.25;
+  }
+
+  .airpods-buttons {
+    width: 74.65%;
+    top: 80%;
+    left: 27.5%;
+    transform: translate(-15%, 47.5%);
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .airpods-btn:first-child {
+    width: inherit;
+    background: linear-gradient(to right, #ececec, #ececec, #ececec,#ececec,#ececec, #ececec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.275rem;
+  }
+
+  .airpods-btn:last-child {
+    font-size: 3.275rem;
+  }
+}
+
+@media (max-width: 550px) {
+  
 }
 
 /* End of Responsive */
