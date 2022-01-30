@@ -1,12 +1,10 @@
 // Common JS
 
-document
-  .querySelectorAll(".watch-control, .controls a, .iphone-btn")
-  .forEach((control) => {
-    control.addEventListener("click", (e) => {
-      e.preventDefault();
-    });
+document.querySelectorAll(".watch-control, .iphone-btn").forEach((control) => {
+  control.addEventListener("click", (e) => {
+    e.preventDefault();
   });
+});
 
 // End of Common JS
 
@@ -58,17 +56,6 @@ const playPause = () => {
 
 playPause();
 
-// controls mouseover
-document.querySelector(".controls").addEventListener("mouseover", () => {
-  bool = false;
-  playPause();
-});
-
-document.querySelector(".controls").addEventListener("mouseout", () => {
-  bool = true;
-  playPause();
-});
-
 // End of Cube
 
 // Slideshow
@@ -77,7 +64,7 @@ const slideshowDivs = () => {
   for (let i = 1; i <= 5; i++) {
     const div = document.createElement("div");
 
-    div.style.backgroundImage = `url(image/slides/slides-bg-${i}.jpg)`;
+    div.style.backgroundImage = `url(image/slides/slide-bg-${i}.jpg)`;
     div.style.backgroundSize = `cover`;
 
     i === 1 && div.classList.add("change");
@@ -107,7 +94,7 @@ const slideshow = () => {
       divs[0].classList.add("change");
       a = 1;
     }
-  }, 3000);
+  }, 4000);
 };
 
 slideshow();
