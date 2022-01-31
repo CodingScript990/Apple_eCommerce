@@ -16,6 +16,7 @@
 .section-2-heading {
   font-size: 11rem;
   font-weight: 300;
+  font-family: 'Andada Pro', serif;
   position: relative;
   margin-bottom: 5rem;
   color: var(--white-color);

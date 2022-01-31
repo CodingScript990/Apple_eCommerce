@@ -18,28 +18,28 @@ let interval; // inter
 
 const cube = document.querySelector(".cube");
 
-// a tag seletor
-document.querySelector(".top-x-control").addEventListener("click", () => {
+// showitem a tag
+document.querySelector(".top-x-showitem").addEventListener("click", () => {
   cube.style.transform = `rotateX(${(x += 20)}deg) rotateY(${y}deg) rotateZ(${z}deg)`;
 });
 
-document.querySelector(".bottom-x-control").addEventListener("click", () => {
+document.querySelector(".bottom-x-showitem").addEventListener("click", () => {
   cube.style.transform = `rotateX(${(x -= 20)}deg) rotateY(${y}deg) rotateZ(${z}deg)`;
 });
 
-document.querySelector(".left-y-control").addEventListener("click", () => {
+document.querySelector(".left-y-showitem").addEventListener("click", () => {
   cube.style.transform = `rotateX(${x}deg) rotateY(${(y -= 20)}deg) rotateZ(${z}deg)`;
 });
 
-document.querySelector(".right-y-control").addEventListener("click", () => {
+document.querySelector(".right-y-showitem").addEventListener("click", () => {
   cube.style.transform = `rotateX(${x}deg) rotateY(${(y += 20)}deg) rotateZ(${z}deg)`;
 });
 
-document.querySelector(".top-z-control").addEventListener("click", () => {
+document.querySelector(".top-z-showitem").addEventListener("click", () => {
   cube.style.transform = `rotateX(${x}deg) rotateY(${y}deg) rotateZ(${(z -= 20)}deg)`;
 });
 
-document.querySelector(".bottom-z-control").addEventListener("click", () => {
+document.querySelector(".bottom-z-showitem").addEventListener("click", () => {
   cube.style.transform = `rotateX(${x}deg) rotateY(${y}deg) rotateZ(${(z += 20)}deg)`;
 });
 

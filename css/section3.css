@@ -15,6 +15,7 @@
 .section-3-heading {
   font-size: 10rem;
   font-weight: 200;
+  font-family: 'Andada Pro', serif;
   color: var(--white-color);
   margin-bottom: 15rem;
 }
@@ -128,6 +129,7 @@
 .macbook-info-heading {
   font-size: 6rem;
   font-weight: 400;
+  font-family: 'Andada Pro', serif;
   background: linear-gradient(to right, #d9eaf8, #7fbaeb, #3990d6, #0c5896, #032642);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -136,6 +138,7 @@
 .macbook-price {
   font-size: 3.5rem;
   font-weight: 200;
+  font-family: 'Andada Pro', serif;
   margin: 3rem 0;
   background: linear-gradient(to right, #d9eaf8, #deecf3, #cdddfd, #acd4fc, #98c8f8);
   -webkit-background-clip: text;
@@ -151,10 +154,12 @@
   box-shadow: .1rem .1rem .1rem #d9eaf8, -.1rem -.1rem .1rem #acd4fc;
   font-size: 1.75rem;
   font-weight: 500;
+  font-family: 'Andada Pro', serif;
   letter-spacing: .2rem;
   cursor: pointer;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transform: translateY(35%);
 }
 
 .macbook-btn:hover {

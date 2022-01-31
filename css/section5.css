@@ -35,8 +35,9 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 13rem;
+  font-size: 12rem;
   font-weight: 300;
+  font-family: 'Andada Pro', serif;
   color: var(--white-color);
   text-shadow: .3rem .3rem 1rem #5f5e5ecc;
   opacity: 0;
@@ -77,7 +78,7 @@
   background-image: url("/image/airpods/airpods-3th-2.png");
   background-repeat: no-repeat;
   background-size: contain;
-  transform: translateY(-11%);
+  transform: translateY(-9.8%);
   opacity: 0;
 }
 
@@ -100,18 +101,20 @@
 }
 
 .airpods-info::before {
-  content: "모든 면에서 매혹적";
+  content: "Attractive airpods";
   position: absolute;
-  width: 60%;
+  width: 65%;
   height: 100%;
-  font-size: 4rem;
+  font-size: 10.85rem;
   font-weight: bold;
+  font-family: 'Dancing Script', cursive;
   top: 50%;
   left: 50%;
   text-align: center;
   text-shadow: 1rem 1rem 1rem solid #999999;
+  text-transform: capitalize;
   color: var(--white-color);
-  transform: translate(-37.5%, -20%);
+  transform: translate(-30.5%, -19.75%);
   opacity: 0;
 }
 
@@ -127,13 +130,13 @@
   height: 100%;
   top: 0;
   left: 50%;
-  font-size: 2.75rem;
+  font-size: 3.15rem;
   font-weight: 300;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Dancing Script', cursive;
   text-align: left;
   color: var(--white-color);
-  transform: translate(-30%, 55%);
-  line-height: 2.5;
+  transform: translate(-30.75%, 56.5%);
+  line-height: 2.75;
   letter-spacing: .125rem;
   opacity: 0;
 }
@@ -151,17 +154,18 @@
   position: absolute;
   top: 53%;
   left: 44.125%;
-  transform: translate(-10%, -60%);
   display: flex;
   flex-direction: column;
   margin-top: 10rem;
+  transform: translate(-15.75%, -60%);
 }
 
 .airpods-btn {
   width: 100%;
   height: inherit;
-  font-size: 3.25rem;
+  font-size: 3.57rem;
   font-weight: 600;
+  font-family: 'Stylish', sans-serif;
   margin: 3rem 0;
   padding: 1rem;
   border: none;

@@ -13,6 +13,7 @@
 .section-4-heading {
   font-size: 11rem;
   font-weight: 300;
+  font-family: 'Andada Pro', serif;
   transform: translateX(5%);
   color: var(--white-color);
   text-shadow: .3rem .3rem 1rem #5f5e5ecc;
@@ -145,11 +146,12 @@
   content: "Apple Watch 구매하기";
   position: absolute;
   top: 40%;
-  left: -25.5%;
+  left: -35.5%;
   width: 250%;
-  font-size: 2.4rem;
+  font-size: 2.75rem;
   color: #272727e1;
   font-weight: bold;
+  font-family: 'Stylish', sans-serif;
   opacity: 0;
   transition: opacity 1.75s;
 }
@@ -159,13 +161,15 @@
 }
 
 .watch-btn span {
+  width: 90%;
   position: absolute;
-  font-size: 1.54rem;
-  font-weight: 600;
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-family: 'Nanum Gothic Coding', monospace;
   top: -27.5%;
-  left: 19.45%;
+  left: 19%;
   color: #4e4e4e;
-  transform: translate(-42%, -110%);
+  transform: translate(-40%, -110%);
   cursor: default;
   animation: fontsBright 3.5s infinite;
 }
